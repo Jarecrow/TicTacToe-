@@ -275,12 +275,12 @@ public class Main : MonoBehaviour
     {
         if (!redoing) //bool to check that redo hasn't already been clicked
         {
-            if (mXTurn) //switch player turn indicator
+            if (!mXTurn) //switch player turn indicator
             {
                 xIndicator.SetActive(true);
                 oIndicator.SetActive(false);
             }
-            else if (!mXTurn)
+            else if (mXTurn)
             {
                 oIndicator.SetActive(true);
                 xIndicator.SetActive(false);
